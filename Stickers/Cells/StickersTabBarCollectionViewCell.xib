@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="StickersTabBarCollectionViewCell" customModule="MojiEdit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPx-7S-wRv">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tabBarFeaturedIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Esy-K9-2g9">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <color key="tintColor" red="0.6470588235294118" green="0.68627450980392157" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Esy-K9-2g9" firstAttribute="top" secondItem="hPx-7S-wRv" secondAttribute="top" id="2Cp-zV-7gu"/>
+                            <constraint firstAttribute="trailing" secondItem="Esy-K9-2g9" secondAttribute="trailing" id="Hh9-UX-vEO"/>
+                            <constraint firstItem="Esy-K9-2g9" firstAttribute="leading" secondItem="hPx-7S-wRv" secondAttribute="leading" id="RIq-ZP-9mT"/>
+                            <constraint firstAttribute="bottom" secondItem="Esy-K9-2g9" secondAttribute="bottom" id="p8q-vd-Vsd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="hPx-7S-wRv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="1pg-EG-Ohh"/>
+                <constraint firstItem="hPx-7S-wRv" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9bw-z8-TRD"/>
+                <constraint firstAttribute="trailing" secondItem="hPx-7S-wRv" secondAttribute="trailing" id="UEr-gb-2Ub"/>
+                <constraint firstAttribute="bottom" secondItem="hPx-7S-wRv" secondAttribute="bottom" id="uzm-Y9-TTe"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundTintView" destination="hPx-7S-wRv" id="Qf5-lN-RTK"/>
+                <outlet property="imageView" destination="Esy-K9-2g9" id="47v-Dv-OOd"/>
+            </connections>
+            <point key="canvasLocation" x="121.73913043478262" y="81.696428571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="tabBarFeaturedIcon" width="16" height="20"/>
+    </resources>
+</document>
